@@ -14,7 +14,7 @@ This gallery is still being developed.  If you wish to download a copy of this p
 > 
 > [ - ] Image Descriptions (under the photo holder)
 > 
-> [ - ] Custom CSS (so you can use without Bootstrap if you want)
+> [ X ] Custom CSS (so you can use without Bootstrap if you want)
 > 
 > [ - ] Animation Options (transitions)
 > 
