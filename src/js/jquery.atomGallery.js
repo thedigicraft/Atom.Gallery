@@ -12,6 +12,9 @@ $.fn.atomGallery = function() {
 		var imageloaded = $(this).attr('href');
 				
 		$(".atom-gallery #holder img").replaceWith('<img class="img-thumbnail" src="'+imageloaded+'">');
+		
+		$(".thumbnails img").css("opacity", ".8");
+		$("> img", this).css("opacity", "1");
 	
 	});
 

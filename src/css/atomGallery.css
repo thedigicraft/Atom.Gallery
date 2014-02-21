@@ -1,28 +1,56 @@
 /* Atom Gallery 1.0 - CSS */
 
-.atom-gallery {
-	
+.atom-gallery {	
 	margin:0px auto;
 	text-align:center;
+	width:800px;
+}
+
+.atom-gallery #holder {	
+	margin:0px auto;
+	text-align:center;	
+	padding:10px 10px 10px 10px;
+	border: 1px solid #DFDFDF;
+	width: 720px;
+	height: 480px;	
+}
+
+.atom-gallery #holder img {	
+	box-shadow: 0px 0px 3px #333333;	
 }
 
 .atom-gallery ul.thumbnails {
-	
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
 }
 
 .atom-gallery ul.thumbnails li {
-	
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	list-style: none;
+	display:inline;	
 }
 
 .atom-gallery ul.thumbnails li a {
-	
+	margin:2px;
+	padding:10px 10px 10px 10px;
+	border: 1px solid #DFDFDF;
+	display: inline-block;
 }
 
 .atom-gallery ul.thumbnails li a:hover {
-	
+	background-color: #EFEFEF;
 }
 
 .atom-gallery ul.thumbnails img {
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;	
 	width: 180px;
 	height: 120px;
+	opacity: .8;
+	box-shadow: 0px 0px 3px #333333;
+}
+.atom-gallery ul.thumbnails img:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 10px #999999;
 }
