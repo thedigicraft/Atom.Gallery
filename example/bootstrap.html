@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" rel="stylesheet">
+
+	<link href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet">
+	
+	<link href="../src/css/atomGallery.css" type="text/css" rel="stylesheet">
+	
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="../src/js/jquery.atomGallery.js"></script>
+	
+	<title>Atom Gallery 1.0 - Bootstrap Demo</title>
+
+	<script>
+		
+		$("document").ready(function() {
+			
+			$("#gallery").atomGallery();
+			
+		});		
+		
+	</script>
+	
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="atom-gallery" id="gallery">
+
+			<div id="holder">
+				
+				<img class="img-thumbnail" src="images/sample_001.jpg" />
+				
+			</div>
+			
+			<ul class="pagination thumbnails">
+
+				<li><a class="thumbnail" href="images/sample_001.jpg"><img src="images/sample_001.jpg" /></a></li>
+				<li><a class="thumbnail" href="images/sample_002.jpg"><img src="images/sample_002.jpg" /></a></li>
+				<li><a class="thumbnail" href="images/sample_003.jpg"><img src="images/sample_003.jpg" /></a></li>
+
+			</ul>			
+						
+		</div>
+		
+	</div>
+
+</body>
+	
+	
+</html>

@@ -1,0 +1,28 @@
+/* Atom Gallery 1.0 - CSS */
+
+.atom-gallery {
+	
+	margin:0px auto;
+	text-align:center;
+}
+
+.atom-gallery ul.thumbnails {
+	
+}
+
+.atom-gallery ul.thumbnails li {
+	
+}
+
+.atom-gallery ul.thumbnails li a {
+	
+}
+
+.atom-gallery ul.thumbnails li a:hover {
+	
+}
+
+.atom-gallery ul.thumbnails img {
+	width: 180px;
+	height: 120px;
+}

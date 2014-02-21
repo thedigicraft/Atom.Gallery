@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" rel="stylesheet">
+
+	<link href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet">
+	
+	<link href="demo.css" type="text/css" rel="stylesheet">
+	<link href="prism.css" type="text/css" rel="stylesheet">
+	
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="prism.js"></script>
+	
+	<title>Atom Gallery 1.0 - Demos</title>
+	
+</head>
+
+<body>
+   <div class="container">
+      <header class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#getting-started">Getting Started</a></li>
+          <li><a href="#initialize">Initialize</a></li>
+          <li><a href="#html">The HTML</a></li>
+        </ul>
+        <h3 class="text-muted">Atom Gallery 1.0</h3>
+      </header>
+
+      <div class="jumbotron">
+        <h1>Atom Gallery 1.0</h1>
+        <p class="lead">A super simple jQuery Photo Gallery built for use in AtomCMS 2.0 by <a target="_blank" href="http://thedigitalcraft.com">The Digital Craft</a>.</p>
+        
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+        	
+          <h4>Lightwieght</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Reusable</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+        </div>
+
+        <div class="col-lg-6">
+        	
+          <h4>Open Source</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Bootstrap Compatible</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-12">
+        
+        <a id="getting-started"></a>
+          <h2>Getting Started</h2>
+          
+          <p>Load the Atom Gallery CSS.</p>
+          
+<pre class="line-numbers">
+<code class="language-markup">
+&lt;link href="atomGallery.css" type="text/css" rel="stylesheet""&gt;	
+</code>
+</pre>           
+          
+          <p>Make sure that you have jQuery loaded before the Atom Gallery script.</p>
+          
+<pre class="line-numbers" data-start="4">
+<code class="language-markup">
+&lt;script src="//code.jquery.com/jquery-1.10.2.min.js"&gt;&lt;/script&gt;	
+</code>
+</pre>  
+
+          <p>Load the Atom Gallery Javascript source.</p>
+          
+<pre class="line-numbers" data-start="8">
+<code class="language-markup">
+&lt;script src="jquery.atomGallery.js"&gt;&lt;/script&gt;	
+</code>
+</pre>
+
+
+
+          <p>Example of what should be in the &lt;head&gt; of your document.</p>
+          
+<pre class="line-numbers" data-start="1">
+<code class="language-markup">
+	&lt;!-- Atom Gallery CSS --&gt;
+	&lt;link href="atomGallery.css" type="text/css" rel="stylesheet""&gt;
+	
+	&lt;!-- jQuery Library --&gt;
+	&lt;script src="//code.jquery.com/jquery-1.10.2.min.js"&gt;&lt;/script&gt;
+	&lt;!-- Atom Gallery Script --&gt;
+	&lt;script src="jquery.atomGallery.js"&gt;&lt;/script&gt;
+</code>
+</pre>          
+
+
+        <a id="initialize"></a>
+          <h2>Initialization</h2>
+          
+          <p>Initializing the plugin is easy! Simply use the ID of the gallery container (in this case #gallery) and apply atomGallery() to that ID.</p>
+          
+<pre class="line-numbers">
+<code class="language-javascript">
+$("#gallery").atomGallery();
+</code>
+</pre> 
+
+
+       
+      
+        <a id="html"></a>
+          <h2>The HTML</h2>
+          
+          <p>This is the basic HTML required to use the Atom Gallery plugin.</p>
+          
+          <p>You first need a container &lt;div&gt;. It must have the class "atom-gallery" applied to it as well as an ID that matches the ID you used when initializing the plugin above.</p>
+          
+<pre class="line-numbers">
+<code class="language-markup">
+&lt;div class="atom-gallery" id="gallery"&gt;&lt;/div&gt;	
+</code>
+</pre> 
+
+          <p>Next, within the container &lt;div&gt; you need to add the photo holder.</p>
+          
+<pre class="line-numbers">
+<code class="language-markup">
+&lt;div class="atom-gallery" id="gallery"&gt;
+	&lt;div id="holder"&gt;&lt;/div&gt;
+&lt;/div&gt;	
+</code>
+</pre>
+
+          <p>After the photo holder div you need to add an unordered list &lt;ul&gt;. Give this &lt;ul&gt; the following classes "pagination" and "thumbnails".</p>
+          
+<pre class="line-numbers">
+<code class="language-markup">
+&lt;div class="atom-gallery" id="gallery"&gt;
+	&lt;div id="holder"&gt;&lt;/div&gt;
+	&lt;ul class="pagination thumbnails"&gt;&lt;/ul&gt;	
+&lt;/div&gt;	
+</code>
+</pre>
+
+          <p>Next, you need to add at least 1 list item &lt;li&gt; within the unordered list. 1 for each image in the gallery.</p>
+          
+<pre class="line-numbers">
+<code class="language-markup">
+&lt;div class="atom-gallery" id="gallery"&gt;
+	&lt;div id="holder"&gt;&lt;/div&gt;
+	&lt;ul class="pagination thumbnails"&gt;
+		&lt;li&gt;&lt;/li&gt;				
+	&lt;/ul&gt;	
+&lt;/div&gt;	
+</code>
+</pre> 
+
+          <p>Within each &lt;li&gt; you need an &lt;a&gt; tag. This holds the url for the image that will be loaded into the photo holder &lt;div id="holder"&gt; above</p>
+          
+<pre class="line-numbers">
+<code class="language-markup">
+&lt;div class="atom-gallery" id="gallery"&gt;
+	&lt;div id="holder"&gt;&lt;/div&gt;
+	&lt;ul class="pagination thumbnails"&gt;
+		&lt;li&gt;
+			&lt;a class="thumbnail" href="images/sample_001.jpg"&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;			
+	&lt;/ul&gt;	
+&lt;/div&gt;	
+</code>
+</pre> 
+
+          <p>Within each &lt;a&gt; you need an &lt;img&gt; tag. This holds the url for the image thumbnail. You must give it a class of "thumbnail".</p>
+          
+<pre class="line-numbers">
+<code class="language-markup">
+&lt;div class="atom-gallery" id="gallery"&gt;
+	&lt;div id="holder"&gt;&lt;/div&gt;
+	&lt;ul class="pagination thumbnails"&gt;
+		&lt;li&gt;
+			&lt;a class="thumbnail" href="images/sample_001.jpg"&gt;
+				&lt;img src="images/sample_001.jpg"&gt;&lt;/a&gt;
+		&lt;/li&gt;			
+	&lt;/ul&gt;	
+&lt;/div&gt;	
+</code>
+</pre>
+
+          <p>Repeat the steps in lines 5-9 in order to add more images to your gallery.</p>
+          
+<pre class="line-numbers">
+<code class="language-markup">
+&lt;div class="atom-gallery" id="gallery"&gt;
+	&lt;div id="holder"&gt;&lt;/div&gt;
+	&lt;ul class="pagination thumbnails"&gt;
+		&lt;li&gt;
+			&lt;a class="thumbnail" href="images/sample_001.jpg"&gt;
+				&lt;img src="images/sample_001.jpg"&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a class="thumbnail" href="images/sample_002.jpg"&gt;
+				&lt;img src="images/sample_002.jpg"&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a class="thumbnail" href="images/sample_003.jpg"&gt;
+				&lt;img src="images/sample_003.jpg"&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;				
+	&lt;/ul&gt;	
+&lt;/div&gt;	
+</code>
+</pre> 
+
+
+      </div>            
+
+      <footer class="footer">
+        <p>&copy; The Digital Craft 2014</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+</body>
+	
+	
+</html>
