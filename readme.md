@@ -16,7 +16,7 @@ This gallery is still being developed.  If you wish to download a copy of this p
 > 
 > [ - ] Image Descriptions (under the photo holder)
 > 
-> [   ] Autoselect first image
+> [ - ] Autoselect first image
 > 
 > [ - ] Animation Options (transitions)
 > 
