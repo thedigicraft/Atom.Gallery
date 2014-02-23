@@ -8,13 +8,15 @@ This gallery is still being developed.  If you wish to download a copy of this p
 
 ### Tadoo List
 
-> [ x ] Basic Documentation
+> [ x ] ~~Basic Documentation~~
+>
+> [ X ] ~~Custom CSS (so you can use without Bootstrap if you want)~~
 > 
 > [ - ] Full Documentation
 > 
 > [ - ] Image Descriptions (under the photo holder)
 > 
-> [ X ] Custom CSS (so you can use without Bootstrap if you want)
+> [   ] Autoselect first image
 > 
 > [ - ] Animation Options (transitions)
 > 
