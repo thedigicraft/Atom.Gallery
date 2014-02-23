@@ -42,7 +42,7 @@
 	background-color: #EFEFEF;
 }
 
-.atom-gallery ul.thumbnails img {
+.atom-gallery ul.thumbnails img.inactive {
 	margin:0px 0px 0px 0px;
 	padding:0px 0px 0px 0px;	
 	width: 180px;
@@ -50,7 +50,20 @@
 	opacity: .8;
 	box-shadow: 0px 0px 3px #333333;
 }
-.atom-gallery ul.thumbnails img:hover {
+.atom-gallery ul.thumbnails img.inactive:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 10px #999999;
+}
+
+.atom-gallery ul.thumbnails img.active {
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;	
+	width: 180px;
+	height: 120px;
+	opacity: 1;
+	box-shadow: 0px 0px 10px #999999;
+}
+.atom-gallery ul.thumbnails img.active:hover {
 	opacity: 1;
 	box-shadow: 0px 0px 10px #999999;
 }
