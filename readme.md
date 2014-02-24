@@ -1,6 +1,8 @@
 # Atom Gallery 1.0
 
-A super simple jQuery Photo Gallery. This gallery can be used on any website though it was originaly built for use in AtomCMS 2.0 by The Digital Craft. 
+A super simple jQuery Photo Gallery. This gallery can be used on any website though it was originaly built for use in AtomCMS 2.0 by The Digital Craft. [View the demo] (http://alanquandt.com/plugins/Atom.Gallery/example/custom.html)
+
+![] (http://alanquandt.com/plugins/Atom.Gallery/example/images/sampleimage.jpg)
 
 ## Info
 
