@@ -1,0 +1,31 @@
+body {
+	
+	font-family: arial;
+	margin:0px auto;
+	
+}
+
+p {
+	font-size: 12px;
+}
+
+.container {
+	margin:0px auto;
+	width: 800px;
+}
+
+.info {
+	margin:30px auto;
+	width: 742px;
+}
+
+.info h1 {
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+.info p {
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+
+

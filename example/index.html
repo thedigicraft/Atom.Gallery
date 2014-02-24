@@ -25,12 +25,14 @@
 
 <body>
    <div class="container">
+   	
       <header class="header">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#getting-started">Getting Started</a></li>
           <li><a href="#initialize">Initialize</a></li>
           <li><a href="#html">The HTML</a></li>
+          <li><a href="#options">Options</a></li>
         </ul>
         <h3 class="text-muted">Atom Gallery 1.0</h3>
       </header>
@@ -38,10 +40,19 @@
       <div class="jumbotron">
         <h1>Atom Gallery 1.0</h1>
         <p class="lead">A super simple jQuery Photo Gallery built for use in AtomCMS 2.0 by <a target="_blank" href="http://thedigitalcraft.com">The Digital Craft</a>.</p>
+        <p><a class="btn btn-lg btn-primary" href="custom.html" role="button">View Demo</a></p>
         
       </div>
 
       <div class="row marketing">
+        <div class="col-lg-12">
+        	
+          <h2>Info</h2>
+          <p>I removed dependance on Twitter's Bootstrap. You can still use it with Bootstrap.  You just do not have to.</p>
+
+
+        </div>
+        
         <div class="col-lg-6">
         	
           <h4>Lightwieght</h4>
@@ -50,15 +61,14 @@
           <h4>Reusable</h4>
           <p>Use it all over your site and/or pages. Use it on all your sites.  That is what reusable means!</p>
 
-        </div>
+        </div>        
 
         <div class="col-lg-6">
         	
           <h4>Open Source</h4>
           <p>I made it. You can have it!</p>
+          <p>Seriously...</p>
 
-          <h4>Bootstrap Compatible</h4>
-          <p>Setup to work with Twitter's Bootstrap as well. That is, if you do not want to use the CSS/style that comes with it.</p>
 
         </div>
       </div>
@@ -67,15 +77,7 @@
         <div class="col-lg-12">
         
         <a id="getting-started"></a>
-          <h2>Getting Started</h2>
-          
-          <p>Load the Bootstrap CSS.</p>
-          
-<pre class="line-numbers">
-<code class="language-markup">
-&lt;link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" type="text/css" rel="stylesheet""&gt;	
-</code>
-</pre> 
+          <h2>Getting Started</h2>          
 
           <p>Load the Atom Gallery CSS.</p>
           
@@ -107,16 +109,13 @@
           
 <pre class="line-numbers" data-start="1">
 <code class="language-markup">
-	
-	&lt;!-- Bootstrap CSS --&gt;
-	&lt;link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" type="text/css" rel="stylesheet""&gt;
-	&lt;!-- Atom Gallery CSS --&gt;
-	&lt;link href="atomGallery.css" type="text/css" rel="stylesheet""&gt;
-	
-	&lt;!-- jQuery Library --&gt;
-	&lt;script src="//code.jquery.com/jquery-1.10.2.min.js"&gt;&lt;/script&gt;
-	&lt;!-- Atom Gallery Script --&gt;
-	&lt;script src="jquery.atomGallery.js"&gt;&lt;/script&gt;
+&lt;!-- Atom Gallery CSS --&gt;
+&lt;link href="atomGallery.css" type="text/css" rel="stylesheet""&gt;
+
+&lt;!-- jQuery Library --&gt;
+&lt;script src="//code.jquery.com/jquery-1.10.2.min.js"&gt;&lt;/script&gt;
+&lt;!-- Atom Gallery Script --&gt;
+&lt;script src="jquery.atomGallery.js"&gt;&lt;/script&gt;
 </code>
 </pre>          
 
@@ -244,10 +243,60 @@ $(document).ready(function() {
 </pre> 
 
 
+        <a id="options"></a>
+		<h1>Options</h1>
+          
+          <p>We are working on more options.  At the moment you have two options available: 'size' and 'cols'.</p>
+          
+		<h2>Size</h2>
+          
+          <p>The 'size' option allows you to set the size of the main (holder) image. This size will automatically adjust the size of the thumbnails according to the number of columns set (see below). The default size is set to 720px.</p>
+          
+<pre class="line-numbers">
+<code class="language-javascript">
+$(document).ready(function() {
+	$("#gallery").atomGallery({
+		size: 720
+	});	
+});
+</code>
+</pre> 
+
+		<h2>Columns</h2>
+          
+          <p>The 'cols' option will allow you to set the number of thumbnail images for each row.  The size of the thumbnails will adjust to fit the 'size' of the main (holder) image. The default value is set to 6.</p>
+          
+<pre class="line-numbers">
+<code class="language-javascript">
+$(document).ready(function() {
+	$("#gallery").atomGallery({
+		cols: 3
+	});	
+});
+</code>
+</pre>
+
+		<h2>Multiple Options</h2>
+          
+          <p>To use more than 1 option you need to sperate them by the coma character.</p>
+          
+<pre class="line-numbers">
+<code class="language-javascript">
+$(document).ready(function() {
+	$("#gallery").atomGallery({
+		size: 720,
+		cols: 3
+	});	
+});
+</code>
+</pre> 
+
+
+
       </div>            
 
       <footer class="footer">
-        <p>&copy; The Digital Craft 2014</p>
+        <p class="pull-right"><a href="http://thedigitalcraft.com">Digital Craft</a> 2014</p>
       </footer>
 
     </div> <!-- /container -->

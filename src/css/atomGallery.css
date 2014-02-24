@@ -4,19 +4,32 @@
 	margin:0px auto;
 	text-align:center;
 	width:800px;
+	font-family: arial;
 }
 
-.atom-gallery #holder {	
-	margin:0px auto;
+.atom-gallery .holder {	
+	margin:5px auto;
 	text-align:center;	
-	padding:10px 10px 10px 10px;
+	padding:10px 10px 5px 10px;
 	border: 1px solid #DFDFDF;
-	width: 720px;
-	height: 480px;	
+	position: relative;
 }
 
-.atom-gallery #holder img {	
+.atom-gallery .holder img {	
 	box-shadow: 0px 0px 3px #333333;	
+}
+.atom-gallery .holder div.description {	
+	position: absolute;
+	bottom:18px;
+	right:-14px;	
+	
+	
+	color:#FFFFFF;
+	background-color:rgba(0,0,0,.7);
+	font-size:18px;
+	font-weight:bold;
+	padding: 10px 40px 10px 20px;
+	box-shadow: 0px 0px 3px #333333;
 }
 
 .atom-gallery ul.thumbnails {
@@ -42,11 +55,14 @@
 	background-color: #EFEFEF;
 }
 
-.atom-gallery ul.thumbnails img.inactive {
+.atom-gallery ul.thumbnails img {
 	margin:0px 0px 0px 0px;
 	padding:0px 0px 0px 0px;	
-	width: 180px;
-	height: 120px;
+
+	opacity: .8;
+	box-shadow: 0px 0px 3px #333333;
+}
+.atom-gallery ul.thumbnails img.inactive {
 	opacity: .8;
 	box-shadow: 0px 0px 3px #333333;
 }
@@ -56,10 +72,6 @@
 }
 
 .atom-gallery ul.thumbnails img.active {
-	margin:0px 0px 0px 0px;
-	padding:0px 0px 0px 0px;	
-	width: 180px;
-	height: 120px;
 	opacity: 1;
 	box-shadow: 0px 0px 10px #999999;
 }
