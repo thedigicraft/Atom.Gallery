@@ -156,6 +156,8 @@ $(document).ready(function() {
 	});	
 });
 ```
+![] (http://alanquandt.com/plugins/Atom.Gallery/example/images/sampleimage_size.jpg)
+
 
 #### Columns
 The 'cols' option will allow you to set the number of thumbnail images for each row. The size of the thumbnails will adjust to fit the 'size' of the main (holder) image. The default value is set to 6.
@@ -167,6 +169,7 @@ $(document).ready(function() {
 	});	
 });
 ```
+![] (http://alanquandt.com/plugins/Atom.Gallery/example/images/sampleimage_cols.jpg)
 
 #### Multiple Options
 To use more than 1 option you need to sperate them by the coma character.
