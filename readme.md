@@ -1,8 +1,8 @@
 # Atom Gallery 1.0
 
-A super simple jQuery Photo Gallery. This gallery can be used on any website though it was originaly built for use in AtomCMS 2.0 by The Digital Craft. [View the demo] (http://alanquandt.com/plugins/Atom.Gallery/example/custom.html)
+A super simple jQuery Photo Gallery. This gallery can be used on any website though it was originaly built for use in AtomCMS 2.0 by The Digital Craft. [View the demo] (http://atomgallery.alanquandt.com/custom.html)
 
-![] (http://alanquandt.com/plugins/Atom.Gallery/example/images/sampleimage.jpg)
+![] (http://atomgallery.alanquandt.com/images/sampleimage.jpg)
 
 ## Info
 
@@ -156,7 +156,7 @@ $(document).ready(function() {
 	});	
 });
 ```
-![] (http://alanquandt.com/plugins/Atom.Gallery/example/images/sampleimage_size.jpg)
+![] (http://atomgallery.alanquandt.com/images/sampleimage_size.jpg)
 
 
 #### Columns
@@ -169,7 +169,7 @@ $(document).ready(function() {
 	});	
 });
 ```
-![] (http://alanquandt.com/plugins/Atom.Gallery/example/images/sampleimage_cols.jpg)
+![] (http://atomgallery.alanquandt.com/images/sampleimage_cols.jpg)
 
 #### Multiple Options
 To use more than 1 option you need to sperate them by the coma character.
@@ -189,7 +189,7 @@ Atom Gallery and the Atom CMS are developed by [Alan Quandt] (alanquandt.com) at
 
 [Donate Here](http://thedigitalcraft.com/) or learn more about Alan's [Private Sessions] (http://thedigitalcraft.com/private-training)
 
-> - Documentation: http://alanquandt.com/plugins/Atom.Gallery/example/
+> - Documentation: http://atomgallery.alanquandt.com/
 > - Official Website: http://thedigitalcraft.com
 > - Facebook: http://facebook.com/thedigicraft
 > - YouTube Videos: http://youtube.com/thedigicraft
